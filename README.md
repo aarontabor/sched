@@ -8,35 +8,35 @@ calculates the amount of total time spent. Sched also keeps track of each
 working session so you can always see full picture.
 
 ##Starting a new task
-  sched -s "Task Name"
+    sched -s "Task Name"
 
 ##Pausing an existing task
-  sched -p "Task Name"
+    sched -p "Task Name"
 
 as an ease of use feature, you can also refer to a particular task by its
 task id (See sched -l).
 
-  sched -p <task id>
+    sched -p <task id>
 
 ##Resuming an existing task
-  sched -r ["Task Name" | <task id>]
+    sched -r ["Task Name" | <task id>]
 
 ##Ending a task
-  sched -e ["Task Name" | <task id>]
+    sched -e ["Task Name" | <task id>]
 
 ##Show all existing tasks (with status)
-  sched -l
+    sched -l
 
-> Output:
+>    Output:
 > 
-> id  Task                 Status    Time Spent
-> === ==================== ========= ==========
-> 1   Essay for School     ongoing   2:34
-> 2   Math Assignment      paused    0:45
-> 3   Reading - Chapter 4  ongoing   1:12
+>    id  Task                 Status    Time Spent
+>    === ==================== ========= ==========
+>    1   Essay for School     ongoing   2:34
+>    2   Math Assignment      paused    0:45
+>    3   Reading - Chapter 4  ongoing   1:12
 
 ##Show the details of a specific task
-  sched -d ["Task Name" | <task id>]
+    sched -d ["Task Name" | <task id>]
 
 > Output:
 > 
@@ -49,7 +49,7 @@ task id (See sched -l).
 > Total: 2:45
 
 ##Show history of tasks
-  sched -h
+    sched -h
 
 > Output:
 > 
@@ -63,7 +63,7 @@ task id (See sched -l).
 
 You can also filter output by using a regex search pattern:
 
-  sched -h <regex>
+    sched -h <regex>
 
 > Output:
 > 
