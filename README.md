@@ -1,3 +1,4 @@
+#Sched
 Sched is a command-line progress tracking assistant to help you keep track of
 how long it takes you to complete tasks. This can be very useful when tracking
 hours for contract work or for making future estimates.
@@ -6,27 +7,25 @@ By telling sched when you start and stop focusing on particular tasks, it
 calculates the amount of total time spent. Sched also keeps track of each
 working session so you can always see full picture.
 
-Sched works as follows:
+##Starting a new task
+`sched -s "Task Name"`
 
-  Starting a new task
-    sched -s "Task Name"
+##Pausing an existing task
+`sched -p "Task Name"`
 
-  Pausing an existing task
-    sched -p "Task Name"
+as an ease of use feature, you can also refer to a particular task by its
+task id (See sched -l).
 
-    as an ease of use feature, you can also refer to a particular task by its
-    task id (See sched -l).
+`sched -p <task id>`
 
-    sched -p <task id>
+##Resuming an existing task
+`sched -r ["Task Name" | <task id>]`
 
-  Resuming an existing task
-    sched -r ["Task Name" | <task id>]
+##Ending a task
+`sched -e ["Task Name" | <task id>]`
 
-  Ending a task
-    sched -e ["Task Name" | <task id>]
-
-  Show all existing tasks (with status)
-    sched -l
+##Show all existing tasks (with status)
+`sched -l`
 
     Output:
 
@@ -36,8 +35,8 @@ Sched works as follows:
     2   Math Assignment      paused    0:45
     3   Reading - Chapter 4  ongoing   1:12
 
-  Show the details of a specific task
-    sched -d ["Task Name" | <task id>]
+##Show the details of a specific task
+`sched -d ["Task Name" | <task id>]`
 
     Output:
 
@@ -49,8 +48,8 @@ Sched works as follows:
 
     Total: 2:45
 
-  Show history of tasks
-    sched -h
+##Show history of tasks
+`sched -h`
 
     Output:
 
@@ -62,9 +61,9 @@ Sched works as follows:
 
     Total: 4:31
 
-    You can also filter output by using a regex search pattern:
+You can also filter output by using a regex search pattern:
 
-    sched -h <regex>
+`sched -h <regex>`
 
     Output:
 
@@ -75,5 +74,4 @@ Sched works as follows:
 
     Total: 3:46
 
-    This can be extremely useful for tracking purposes
-
+This can be extremely useful for tracking purposes
