@@ -27,13 +27,15 @@ task id (See sched -l).
 ##Show all existing tasks (with status)
 `sched -l`
 
-    Output:
+`
+Output:
 
-    id  Task                 Status    Time Spent
-    === ==================== ========= ==========
-    1   Essay for School     ongoing   2:34
-    2   Math Assignment      paused    0:45
-    3   Reading - Chapter 4  ongoing   1:12
+id  Task                 Status    Time Spent
+=== ==================== ========= ==========
+1   Essay for School     ongoing   2:34
+2   Math Assignment      paused    0:45
+3   Reading - Chapter 4  ongoing   1:12
+`
 
 ##Show the details of a specific task
 `sched -d ["Task Name" | <task id>]`
